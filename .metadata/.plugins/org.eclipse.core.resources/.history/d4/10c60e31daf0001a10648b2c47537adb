@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.project.brunch.domain.post.PostMapper">
+  
+  	<!-- findAllPost : 메인 포스트 목록 뿌리기 -->
+	<select id="findAllPost" resultType="com.project.brunch.web.dto.post.PostRespDto"> 
+			SELECT * FROM post p INNER JOIN user u ON p.userid = u.id
+	</select>
+  
+	<update id="updateByPost">
+		SELECT coverImg FROM post WEHRE id=#{id}
+	</update>
+	
+	<!-- findBy작가의서랍 : 작가의 서랍 목록 뿌리기 -->
+	<select id="findBy작가의서랍" resultType="com.project.brunch.domain.post.Post">
+	     SELECT title, content, coverImg, createDate
+	     FROM post 
+	     WHERE userId=#{id}
+  	</select>
+  
+ 	<select id="findBy태그" resultType="com.project.brunch.domain.post.Post">
+	     SELECT p.title, p.coverImg, p.subTitle, p.content, p.createDate, u.nickname, t.tag
+	  	 FROM post p INNER JOIN tag t INNER JOIN user u
+	 	 ON t.postId = p.id AND u.Id = p.userId AND t.tag=#{tag}
+ 	</select>
+  
+</mapper>

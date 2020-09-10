@@ -1,0 +1,5 @@
+package com.cos.review.config.batch;
+
+public class BatchCrawNaver {
+
+}

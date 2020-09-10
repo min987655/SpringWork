@@ -1,0 +1,5 @@
+package com.cos.review.repository;
+
+public interface SearchKeywordRepository {
+
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<meta charset="UTF-8">
+<title>제품리뷰 관리자 페이지</title>
+</head>
+<body>
+<ul>
+	<li><a href="/craw/list">크롤링 키워드 목록</a></li>
+	<li><a href="/craw/naver">전체 크롤링</a></li>
+	<li><a href="/craw/clear">크롤링 데이터 정리</a></li>
+</ul>
+<h1>네이버 크롤링 키워드 등록 페이지</h1>
+<hr/>
+<h3>현재 키워드</h3>
+<ol>
+	<li>갤럭시20</li>
+	<li>아이폰12</li>
+	<li>맥북프로</li>
+</ol>
+<hr/>
+<form id="frm" style="margin-bottom:5px">
+	<input type="text" name="keyword" placeholder="키워드" />
+</form>
+	<button onclick="crawNaver()">크롤링시작</button>
+<script>
+
+	// jquery를 통해 데이터 변수화. 
+	// form에 검색되는 값을 key = value 행태로 받아줌
+	// keyword = form_el.serialize();
+	function crawNaver(){
+		let form_el = $("#frm");
+		let data = form_el.serialize();
+		console.log(data);
+
+		fetch("/craw/naver/proc",{
+			method : "post",
+			body: data,
+			headers:{
+				'Content-Type':'application/x-www-form-urlencoded; charset=utf-8'
+			}
+		}, 120000).then(function(resp){
+			return resp.text();
+		}).then(function(resp){
+			console.log(resp);
+			alert(resp);
+		});
+	}
+</script>
+</body>
+</html>

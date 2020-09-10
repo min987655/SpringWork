@@ -1,0 +1,5 @@
+package com.cos.baseball.config;
+
+public class WebConfig {
+
+}

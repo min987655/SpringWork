@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.project.brunch.domain.user.UserMapper">
+
+	<!-- update : 유저 프로필 정보 업데이트하기 -->
+  	<update id="update">
+		UPDATE user SET nickName = #{nickName}, bio = #{bio}, profileImage = #{profileImage}
+		WHERE id = #{id} 
+	</update>
+ 
+</mapper>

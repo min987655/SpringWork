@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<meta charset="UTF-8">
+<title>제품리뷰 관리자 페이지</title>
+</head>
+<body>
+<ul>
+	<li><a href="/craw/list">크롤링 키워드 목록</a></li>
+	<li><a href="/craw/naver">전체 크롤링</a></li>
+	<li><a href="/craw/clear">크롤링 데이터 정리</a></li>
+</ul>
+<h1>네이버 크롤링 하기</h1>
+<hr/>
+
+
+</body>
+</html>

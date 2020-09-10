@@ -1,0 +1,5 @@
+package com.cos.baseball.repository;
+
+public class StadiumRepository {
+
+}

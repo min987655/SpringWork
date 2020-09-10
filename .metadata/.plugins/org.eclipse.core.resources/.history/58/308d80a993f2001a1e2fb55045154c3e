@@ -1,0 +1,23 @@
+{{>layout/header}}
+
+<div class="container mt-5 mb-5">
+  <h1>팀 목록</h1>
+  <table class="table mt-4">
+    <thead class="thead-light">
+      <tr>
+        <th>번호</th>
+        <th>팀명</th>
+      </tr>
+    </thead>
+    <tbody>
+    	{{#teamList}}
+	      <tr>
+	        <td>{{teamname}}</td>
+	        <td></td>
+	      </tr>
+      {{/teamList}}
+    </tbody>
+  </table>
+</div>
+
+{{>layout/footer}}

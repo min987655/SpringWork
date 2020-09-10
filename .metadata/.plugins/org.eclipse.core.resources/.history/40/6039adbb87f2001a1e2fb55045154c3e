@@ -1,0 +1,31 @@
+package com.cos.baseball.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.cos.baseball.controller.dto.CommonRespDto;
+import com.cos.baseball.model.Stadium;
+
+@Controller
+public class TeamController {
+
+	@GetMapping("/team/list")
+	public String stadium() {
+		return "team/teamList";
+	}
+		
+	@GetMapping("/team/save")
+	public String player() {
+		return "team/teamSaveForm";
+	}
+	
+	@PostMapping("/team/saveProc")
+	public @ResponseBody CommonRespDto<?> saveProc(@RequestBody Stadium stadium) {
+		System.out.println("StadiumController : saveProc : " + stadium);
+		stadiumService.야구장등록(stadium);
+		return new CommonRespDto<String>(1, "회원가입완료");
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;NaverReviewApp&apos;&#x0D;&#x0A;- Original project: &apos;NaverReviewApp&apos;&#x0D;&#x0A;- Original element: &apos;craw_naver.html&apos;" description="Delete element" element1="src/main/resources/templates/craw_naver.html" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="1" stamp="1598578282558" subPackages="false" version="1.0"/>
+</session>

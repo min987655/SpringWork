@@ -1,0 +1,19 @@
+package com.cos.scheduleex01;
+
+import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.stereotype.Component;
+
+@Component
+public class CrawCron {
+
+	@Scheduled(cron = "10*****")
+	public void cronJob() {
+		System.out.println("매분 10초마다 자동실행");
+	}
+	
+	@Scheduled(fixedDelay = 1000) // 1초마다 실행
+	public void scheduleFixedRateTask() {
+		System.out.println("1초마다 실행");
+	}
+	
+}

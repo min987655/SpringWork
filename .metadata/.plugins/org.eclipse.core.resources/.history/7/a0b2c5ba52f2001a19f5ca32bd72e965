@@ -1,0 +1,13 @@
+package com.cos.baseball.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class RegisterController {
+
+	@GetMapping("register/stadium")
+	public String stadium() {
+		return "register_stadium";
+	}
+}

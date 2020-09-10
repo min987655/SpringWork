@@ -1,0 +1,14 @@
+package com.cos.baseball.config;
+
+import org.springframework.context.annotation.Configuration;
+
+// 필터링
+@Configuration
+public class WebConfig {
+
+	// yml에 적혀있는 설정을 참고함
+		@ConfigurationProperties(prefix="spring.datasource")
+		public DataSource dataSource(){
+	    	return DataSourceBuilder.create().build();
+		}
+}

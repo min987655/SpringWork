@@ -1,0 +1,9 @@
+package com.cos.baseball.config;
+
+import org.springframework.context.annotation.Configuration;
+
+// 필터링
+@Configuration
+public class WebConfig {
+
+}

@@ -1,0 +1,4 @@
+GitRepositoriesView.GitDirectories=C\:\\src\\springwork\\Springboot-Security-OAuth2.0-V2\\.git;C\:\\src\\springwork\\blog\\.git;C\:\\src\\springwork\\brunch\\.git;C\:\\src\\springwork\\securityex01\\.git;C\:\\src\\springwork\\NaverReviewApp\\.git;C\:\\src\\springwork\\brunch-project-master\\server-brunch-project\\.git;C\:\\src\\springwork\\brunch-project-master\\.git;C\:\\src\\springwork\\securityex02\\.git;C\:\\src\\springwork\\instagram\\.git;C\:\\src\\springwork\\viewresolver\\.git;C\:\\src\\springwork\\brunch-project\\.git;C\:\\src\\springwork\\securityex01-oauth\\.git;
+GitRepositoriesView.GitDirectories.relative=Springboot-Security-OAuth2.0-V2\\.git;blog\\.git;brunch\\.git;securityex01\\.git;NaverReviewApp\\.git;brunch-project-master\\server-brunch-project\\.git;brunch-project-master\\.git;securityex02\\.git;instagram\\.git;viewresolver\\.git;brunch-project\\.git;securityex01-oauth\\.git;
+core_autoIgnoreDerivedResources=false
+eclipse.preferences.version=1

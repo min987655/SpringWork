@@ -1,0 +1,5 @@
+package com.cos.baseball.service;
+
+public class StadiumService {
+
+}

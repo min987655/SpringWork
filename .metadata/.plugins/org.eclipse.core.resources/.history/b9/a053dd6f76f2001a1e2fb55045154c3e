@@ -1,0 +1,8 @@
+package com.cos.baseball.service;
+
+import org.springframework.stereotype.Service;
+
+@Service // Ioc
+public class StadiumService {
+
+}
